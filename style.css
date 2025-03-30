@@ -1,0 +1,298 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Ruda:wght@400..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Quattrocento:wght@400;700&display=swap');
+
+:root{
+  /* width: 100%; */
+  /* height: 100%; */
+  background-color: black;
+}
+
+nav{
+  display: flex;
+  background-color: black;
+  color: white;
+  font-family: "Ruda", sans-serif;
+  justify-content: space-between;
+  align-items: center;
+  /* margin: 30px; */
+  padding: 0 20px;
+  margin: 0px 20px;
+  /* position: fixed; */
+  /* width: 100%; */
+}
+
+
+.brand-name>h1{
+  font-size: 29px;
+  
+
+}
+nav>ul{
+  display: flex;
+  justify-content: space-evenly;
+    
+}
+
+nav>ul>li{
+  list-style-type: none;
+  color: white;
+  display: flex;
+  /* justify-content: space-between; */
+}
+nav>ul>li>a{
+  color: white;
+  margin: 20px;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+.social-icon>ul{
+  display: flex;
+  list-style-type: none;
+  /* margin-right: 20px; */
+}
+
+.social-icon>ul>li{
+  margin: 10px;
+}
+
+.main-content{
+  
+  background-image: url('https://media.istockphoto.com/id/184946701/photo/pizza.jpg?s=2048x2048&w=is&k=20&c=8OBQa24pfg30tPlnhq4fCzhdaNlcHn-vRDpTHo4H3bA=');
+  background-color: white;
+  
+  background-size: cover;
+  background-position: center;
+  color: aliceblue;
+  width: 100%;
+  height: 680px;
+  font-family: "Quattrocento", serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 20px;
+  /* margin: 40px; */
+}
+.main-content>h3{
+  font-size: 101px;
+  font-weight: 700;
+  margin: 0;
+}
+.main-content>p{
+  font-size: 25px;
+  width: 400px;
+}
+.red-line{
+  margin-top: 0;
+  background-color: #B62828;
+  width: 586px;
+  height: 13px;
+}
+
+
+/* .main-content>img{
+  width: 100%;
+  height: 680px;
+  
+} */
+
+.about-us{
+  margin-top: 50px;
+  color: aliceblue;
+  text-align: center;
+  margin: 20px 50px;
+}
+.about-us>h1{
+  font-family: "Quattrocento", serif;
+  text-decoration: underline #B62828;
+  font-size: 40px;
+  ;
+}
+.about-us-cont{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+
+}
+.about-us-cont>p{
+  text-align: justify;
+  font-size: 22px ;
+}
+.about-us-cont>img{
+  width: 631px;
+  height: 506px;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 0 0 white;
+  
+}
+
+.para{
+  text-align: justify;
+  font-size: 22px ;
+  
+}
+
+.menu-item-cont{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.menu-item{
+  display: flex;
+  justify-content: space-between;
+  width: 600px;
+}
+.menu-item>img{
+  width: 300px;
+  height: 200px;
+  margin: 10px;
+  border-radius: 10px;
+
+}
+.menu-detail{
+  display: flex;
+  flex-direction: column;
+  margin: 0 20px;
+  
+}
+.menu-detail>h4{
+  font-size: 30px;
+  margin: 0px;
+  text-align: left;
+  color: #F2C94C; 
+
+}
+.menu-detail>p{
+  text-align: left;
+  font-size: 22px;
+
+}
+
+.carousel>img{
+  width: 90%;
+  height: 600px;
+}
+
+
+.gallery-container {
+  width: 100%;
+  display: grid;
+  gap: 10px; /* Adds spacing between grid items */
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-rows: auto auto auto; /* Adjusts based on content */
+  grid-template-areas:
+    "a b d"
+    "a c d"
+    "a f e";
+}
+
+.gallery-container > img {
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* Ensures images fill their containers properly */
+}
+
+#a { grid-area: a;
+height: 100%; }
+#b { grid-area: b;height: 100%; }
+#c { grid-area: c; height: 100%;}
+#d { grid-area: d;height: 100%; }
+#e { grid-area: e;height: 100%; }
+#f { grid-area: f;height: 100%; }
+
+
+img{
+  border-radius: 10px;
+}
+
+.find-us-cont{
+  display: flex;
+  justify-content: space-around;
+  font-family: "Ruda", sans-serif;
+}
+.find-us-location{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 20px;
+  margin: 20px;
+}
+
+footer{
+  color: white;
+  font-family: "Ruda", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 200px;
+  align-items: center;
+
+}
+footer>div>img{
+  /* color: rgb(2, 2, 2); */
+  width: 150px;
+  margin: 0 50px;
+}
+.mail-number{
+  margin-right: 200px;
+}
+
+
+@media screen and (max-width:500px) {
+  .brand-name>h1{
+    text-align: center;
+
+  }
+  nav{
+    flex-direction: column;
+
+  }
+  nav>ul{
+    flex-direction: column;
+  }  
+  .main-content{
+    max-width: 90vw;
+  }
+  .main-content>h3{
+    font-size: 40px;
+  }
+  .red-line{
+    max-width: fit-content;
+  }
+  .about-us{
+    max-width: 90vw;
+  }
+  .about-us-cont{
+    flex-direction: column;
+    align-items: center;
+    /* max-width: 100%; */
+  }
+  .about-us-cont>img{
+    max-width: 100%;
+  }
+  
+  .menu-item{
+    flex-direction: column;
+    align-items: center;
+
+  }
+  .gallery-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .find-us-cont{
+    flex-direction: column;
+  }
+
+  footer{
+    margin-top: 40px;
+  }
+   
+}
