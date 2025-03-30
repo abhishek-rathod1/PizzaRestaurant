@@ -255,7 +255,8 @@ footer>div>img{
     flex-direction: column;
   }  
   .main-content{
-    max-width: 90vw;
+    max-width: 80vw;
+    justify-content: center;
   }
   .main-content>h3{
     font-size: 40px;
@@ -291,6 +292,9 @@ footer>div>img{
     flex-direction: column;
   }
 
+  iframe{
+    width: 100%;
+  }
   footer{
     margin-top: 40px;
   }
